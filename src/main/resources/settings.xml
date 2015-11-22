@@ -7,7 +7,7 @@
     <server>
       <username>${ARTIFACTORY_SERVER_READ_USER_NAME}</username>
       <password>${ARTIFACTORY_SERVER_PASSWORD}</password>
-      <id>central</id>
+      <id>release</id>
     </server>
     <server>
       <username>${ARTIFACTORY_SERVER_READ_USER_NAME}</username>
@@ -22,7 +22,7 @@
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
-          <id>central</id>
+          <id>release</id>
           <name>libs-release</name>
           <url>https://${ARTIFACTORY_SERVER_NAME}/libs-release</url>
         </repository>
@@ -49,7 +49,7 @@
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
-          <id>central</id>
+          <id>release</id>
           <name>plugins-release</name>
           <url>https://${ARTIFACTORY_SERVER_NAME}/plugins-release</url>
         </pluginRepository>
