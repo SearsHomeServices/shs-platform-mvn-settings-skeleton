@@ -19,18 +19,22 @@
     <profile>
       <repositories>
         <repository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
           <id>release</id>
           <name>libs-release</name>
           <url>https://${ARTIFACTORY_SERVER_NAME}/libs-release</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
         </repository>
         <repository>
           <snapshots/>
           <id>snapshots</id>
           <name>libs-snapshot</name>
           <url>https://${ARTIFACTORY_SERVER_NAME}/libs-snapshot</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <updatePolicy>always</updatePolicy>
         </repository>
         <repository>
           <id>oss.sonatype.org</id>
