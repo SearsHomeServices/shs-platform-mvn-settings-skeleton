@@ -27,11 +27,13 @@
           </snapshots>
         </repository>
         <repository>
-          <snapshots/>
           <id>snapshots</id>
           <name>libs-snapshot</name>
           <url>https://${ARTIFACTORY_SERVER_NAME}/libs-snapshot</url>
-          <updatePolicy>always</updatePolicy>
+          <snapshots> 
+            <enabled>true</enabled> 
+            <updatePolicy>always</updatePolicy> 
+          </snapshots> 
         </repository>
         <repository>
           <id>oss.sonatype.org</id>
