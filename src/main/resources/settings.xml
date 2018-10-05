@@ -46,6 +46,10 @@
           <url>http://oss.sonatype.org/content/repositories/snapshots</url>
           <snapshots/>
         </repository>
+        <repository>
+    	    <id>jcenter</id>
+      		<url>https://jcenter.bintray.com/</url>
+    	   </repository>
       </repositories>
       <pluginRepositories>
         <pluginRepository>
